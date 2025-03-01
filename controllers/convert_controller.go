@@ -35,12 +35,6 @@ func (c *ImageController) ConvertToJPEG(ctx *gin.Context) {
 	case "avif":
 		imgFormat = bimg.AVIF
 
-	case "svg":
-		imgFormat = bimg.SVG
-
-	case "pdf":
-		imgFormat = bimg.PDF
-
 	default:
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": "Invalid File Formart"})
 

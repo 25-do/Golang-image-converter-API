@@ -110,8 +110,6 @@ func getExtension(format bimg.ImageType) string {
 		return "tiff"
 	case bimg.AVIF:
 		return "avif"
-	case bimg.SVG:
-		return "svg"
 	default:
 		return "img"
 	}
